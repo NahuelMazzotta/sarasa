@@ -1,0 +1,88 @@
+textarea{
+    height:200px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+h1{
+  text-align: center;
+  font-size: 100px;
+}
+.backarrow{
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column; 
+}
+.imagenbackarrow{
+  width: 50px;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=number]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{ -moz-appearance: textfield;}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+legend{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+  }
+.invalidfield{
+    border-color: red !important;
+  }
+  .validfield{
+    display: none;
+  }
+  p{
+    color: red;
+    margin-top: -10px;
+    font-size: 20px;
+  
+  }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../estilos/contacto.css">
+    <script src="../Javascript/contactojs.js"></script>
+</head>
+<body>
+<article>
+<section>
+    <header>
+    <h1>Contacto</h1>
+        <a href="./indexespañol.html" class="flechadeatras">
+            <img class="imagenflechadeatras" src="../imagenes/flecha de atras.png" alt="flechadeatras">
+    </a>
+    </header>
+</section>
+<section class="container">
+    <form action="action_page.html" method="get">
+        <fieldset>
+            <b><u><legend>DATOS PERSONALES</legend></u></b>
+            <label for="Nombre">Nombre
+                <input type="text" name="Nombre" id="Nombre">
+                <p id="NombreError" class="ocultarError"> Debe ingresar datos</p>
+            </label>
+            <label for="Apellido">Apellido
+                <input type="text" name="Apellido" id="Apellido">
+                <p id="ApellidoError" class="ocultarError"> Debe ingresar datos</p>
+            </label>
+            <label for="fechaNacimiento">Fecha de nacimiento
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" min="1930-30-12" max ="2022-30-12">
+                <p id="fechaNacimientoError" class="ocultarError"> Debe ingresar datos</p>
+                <h3 id="edad"></h3>
+            </label>
+
+           <br> <label for="Pais">País de Residencia</label>
+                <select name="Pais" id="Pais">
+                    <option value="AR">Argentina</option>
+                    <option value="Br">Brasil</option>
+                    <option value="Ch">Chile</option>
+                    <option value="Uy">Uruguay</option>
+                    <option value="Bl" selected>Bolivia</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <p id="PaisError" class="ocultarError"> Debe ingresar datos</p>
+            
+            <label for="Calle">Calle
+                <input type="text" name="Calle" id="Calle">
+                <p id="CalleError" class="ocultarError"> Debe ingresar datos</p>
+            </label>
+            <label for="NumeroCasa">Número
+                <input type="number" name="Numero" id="Numero">
+                <p id="NumeroError" class="ocultarError"> Debe ingresar datos</p>
+            </label>
+            <label for="Mensaje"> Mensaje</label>
+            <textarea id="Mensaje" name="Mensaje" placeholder="Dejanos tu comentario" cols="100" rows="30"></textarea>
+            <p id="MensajeError" class="ocultarError"> Debe ingresar datos</p>
+        </fieldset>
+    </form>
+    <button onclick="enviar()">Enviar</button>
+</section>
+</article>
+</body>
+</html>

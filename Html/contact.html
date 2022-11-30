@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../estilos/contact.css">
+    <script src="../Javascript/contactjs.js"></script>
+</head>
+<body>
+<section>
+    <header>
+        <h1>Contact</h1>
+            <a href="./indexenglish.html" class="backarrow">
+                <img class="imagenbackarrow" src="../imagenes/flecha de atras.png" alt="backarrow">
+        </a>
+    </header>
+</section>
+<section class="container">
+    <form action="action_page.html" method="post">
+        <fieldset>
+            <b><u><legend>PERSONAL DETAILS</legend></u></b>
+            <label for="fname">First Name
+                <input type="text" name="fname" id="fname">
+                <p id="fnameError" class="validfield"> Blank field</p>
+            </label>
+            <label for="lname">Last Name
+                <input type="text" name="lname" id="lname">
+                <p id="lnameError" class="validfield"> Blank field</p>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>RESIDENCE</legend>
+            <label for="Country">Country
+                <select name="Country" id="country">
+                    <option value="AR">Argentina</option>
+                    <option value="Br">Brazil</option>
+                    <option value="Ch">Chile</option>
+                    <option value="Uy" selected>Uruguay</option>
+                    <option value="Bl">Bolivia</option>
+                    <option value="Others">Others</option>
+                </select>
+                <p id="countryError" class="validfield"> Blank field</p>
+            </label>
+            <label for="StreetNumber">Street Number
+                <input type="number" name="StreetNumber" id="snumber">
+                <p id="snumberError" class="validfield"> Blank field</p>
+            </label>
+            <label for="Street">Street
+                <input type="text" name="Street" id="street">
+                <p id="streetError" class="validfield"> Blank field</p>
+            </label>
+            <label for="message"> Message</label>
+            <textarea id="message" name="message" placeholder="Leave us your comment" id="message"></textarea>
+            <p id="messageError" class="validfield"> Blank field</p>
+        </fieldset>
+    </form>
+    <button onclick="submit()">Submit</button>
+</section>
+</body>
+</html>
